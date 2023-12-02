@@ -18,6 +18,7 @@ int msgget(key_t key, int msgflag);
 ## Flags for msgflag:
 
 `IPC_CREAT`: If there is no existing queue with the given key, then create a new one.
+
 `IPC_EXCL`: If the `IPC_CREAT` flag is set and a queue with the given key already exists, then the call ends with an `EEXIST` error.
 
 ## message_create.c Program
